@@ -1,0 +1,451 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<title>Viatorem - Destinations</title>
+	
+<style> 
+#navheader li{display: inline;
+list-style: none;}
+#navheader {
+text-align: center;
+font-size:22px;
+font-family:"Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, "sans-serif";}
+#navheader a {
+display:inline-block;
+margin: 0 15px;
+text-decoration: none;}
+a{color: black;}
+a:hover{color:darkorange;}
+a:visited {color:black;}
+
+	#Logo {text-align: center;}
+
+	body {font-family:"Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, "sans-serif";
+	text-decoration: none;
+	}
+	
+	h1{
+		font-size: 24px;
+		font-weight:500;
+		text-align: center;
+	color: darkturquoise;}
+		
+	
+	h2{font-size: 20px;
+	font-weight: 500;
+	margin-left: 10px;
+	text-align: center;}
+ 
+	.ConteneurImagesDestinations {
+			overflow-x:auto; }
+		
+		ul {white-space: nowrap;
+			list-style: none;}
+		
+		ul li{display: inline-block;}
+		
+		.ImagesDestinations {
+			width: 300px;
+			height: 200px;
+			display: inline-block;
+			margin: 2px;
+			margin-bottom: 4px;
+			position: relative;
+		}
+		
+		.ImagesDestinations img {
+			width: 100%;
+			height: 100%;
+		border-radius: 4px;
+		transition: .3s;}
+		
+		.ImagesDestinations:hover img{
+
+			filter:blur(0.8px) brightness(40%) ;
+			box-shadow: 0 0 6px grey;
+		}
+		
+	.TextonImage{
+			position: absolute;
+		top: 30%;
+		z-index: 1;
+		color: #fff;
+		text-align: center;
+		width: 100%;
+		opacity: 0;
+		transition: 3s;}
+		
+	.ImagesDestinations:hover .TextonImage
+		{ opacity: 1;}
+		
+		
+	.row {
+  width: 100%;
+}
+
+@media (min-width: 1200px) {
+  .col-lg-1, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-lg-10, .col-lg-11, .col-lg-12 {
+    float: left;
+    border: 1px solid green;
+  }
+  .col-lg-1 {
+    width: 8.33%;
+  }
+  .col-lg-2 {
+    width: 16.66%;
+  }
+  .col-lg-3 {
+    width: 25%;
+  }
+  .col-lg-4 {
+    width: 33.33%;
+  }
+  .col-lg-5 {
+    width: 41.66%;
+  }
+  .col-lg-6 {
+    width: 50%;
+  }
+  .col-lg-7 {
+    width: 58.33%;
+  }
+  .col-lg-8 {
+    width: 66.66%;
+  }
+  .col-lg-9 {
+    width: 74.99%;
+  }
+  .col-lg-10 {
+    width: 83.33%;
+  }
+  .col-lg-11 {
+    width: 91.66%;
+  }
+  .col-lg-12 {
+    width: 100%;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+  .col-md-1, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-10, .col-md-11, .col-md-12 {
+    float: left;
+    border: 1px solid green;
+  }
+  .col-md-1 {
+    width: 8.33%;
+  }
+  .col-md-2 {
+    width: 16.66%;
+  }
+  .col-md-3 {
+    width: 25%;
+  }
+  .col-md-4 {
+    width: 33.33%;
+  }
+  .col-md-5 {
+    width: 41.66%;
+  }
+  .col-md-6 {
+    width: 50%;
+  }
+  .col-md-7 {
+    width: 58.33%;
+  }
+  .col-md-8 {
+    width: 66.66%;
+  }
+  .col-md-9 {
+    width: 74.99%;
+  }
+  .col-md-10 {
+    width: 83.33%;
+  }
+  .col-md-11 {
+    width: 91.66%;
+  }
+  .col-md-12 {
+    width: 100%;
+  }
+}
+
+	footer{
+		  width: 100%;
+		  background-color: #222;
+		  padding: 60px 0px;}
+	  
+	  footer nav {float: right;}
+	  
+	  footer nav ul li {
+		  display: inline-block;
+		  margin-left: 20px;
+		  list-style: none;
+	  }
+	  footer nav ul li a {
+		  font-family:Gotham, 'Helvetica Neue', Helvetica, Arial, 'sans-serif';
+		  font-weight: 400;
+		  font-size: 14px;
+		  color: #fff;
+		  text-decoration: none;
+	     margin: 0 10px;
+	  }
+
+	
+	</style>
+</head>
+<body>
+	
+	<header>
+
+<div id="Logo">
+<img src="images/Viatoremlogo.png" width="100" height="74" alt="Viatorem - Destinations"/>
+	</div>
+		
+<nav id="navheader">
+  <ul> 
+    <li> <a href="index.html">Home</a> </li> <li> <a href="#">Destinations</a> </li> <li> <a href="#">Events</a> </li> <li> <a href="#">Bons Plans</a> </li> <li> <a href="#">Promotions</a> </li>
+    </ul>
+</nav>
+ 
+</header>
+	
+<h1>Nos destinations</h1>
+	<h2>Europe</h2>
+	
+
+<div class="ConteneurImagesDestinations"> 
+	<ul> 
+<li> <div class="ImagesDestinations">
+	<a href="Italie.html"> <img src="images/venice-3183168_1280.jpg" width="1280" height="854" alt=""/> 
+	<div class="TextonImage"> <h3>Italie</h3> </div>
+	</a> </div> </li>
+	
+	<li><div class="ImagesDestinations">
+	<a href="#"> <img src="images/paris-1836415_1280.jpg" width="1280" height="854" alt=""/> 
+	<div class="TextonImage">  <h3>France</h3> </div>
+	</a> </div> </li>
+	
+	<li><div class="ImagesDestinations">
+	<a href="#"> <img src="images/frankfurt-1804481_1280.jpg" alt=""/> 
+	<div class="TextonImage">  <h3>Allemagne </h3> </div>
+	</a> </div> </li>
+	
+	<li><div class="ImagesDestinations">
+	<a href="#"> <img src="images/alicante-2656256_1280.jpg" alt=""/> 
+	<div class="TextonImage">  <h3>Espagne </h3> </div>
+	</a> </div></li>
+	
+	<li><div class="ImagesDestinations">
+	<a href="#"> <img src="images/lisbon-1801727_1280.jpg" alt=""/> 
+	<div class="TextonImage">  <h3>Portugal </h3> </div>
+	</a> </div> </li>
+	
+	<li><div class="ImagesDestinations">
+	<a href="#"> <img src="images/london-1081820_1280.jpg" alt=""/> 
+	<div class="TextonImage">  <h3>Angleterre </h3> </div>
+	</a> </div> </li>
+	
+	
+	<li><div class="ImagesDestinations">
+	<a href="#"> <img src="images/oia-416135_1280.jpg" alt=""/> 
+	<div class="TextonImage">  <h3>Grèce </h3> </div>
+	</a> </div> </li>
+	
+	<li><div class="ImagesDestinations">
+	<a href="#"> <img src="images/aurora-1185464_1280.jpg" alt=""/> 
+	<div class="TextonImage">  <h3>Finlande </h3> </div>
+	</a> </div> </li>
+		</ul>
+</div>
+	
+	
+	<h2>Amérique du nord</h2>
+	
+	<div class="ConteneurImagesDestinations"> 
+		
+	<ul> 
+		
+	<li><div class="ImagesDestinations">
+	<a href="#"> <img src="images/empire-state-building-1081929_1280.jpg" alt=""/> 
+	<div class="TextonImage">  <h3>New York </h3> </div>
+	</a> </div> </li>
+	
+	<li><div class="ImagesDestinations">
+	<a href="#"> <img src="images/san-francisco-2030794_1280.jpg" alt=""/> 
+	<div class="TextonImage">  <h3>San Francisco </h3> </div>
+	</a> </div> </li>
+	
+	<li><div class="ImagesDestinations">
+	<a href="#"> <img src="images/chicago-690364_1280.jpg" alt=""/> 
+	<div class="TextonImage">  <h3>Chicago</h3> </div>
+	</a> </div> </li>
+	
+	<li><div class="ImagesDestinations">
+	<a href="#"> <img src="images/horseshoe-bend-1908283_1280.jpg" alt=""/> 
+	<div class="TextonImage">  <h3>Grand Canyon </h3> </div>
+	</a> </div> </li>
+	
+	<li><div class="ImagesDestinations">
+	<a href="#"> <img src="images/kauai-77825_1280.jpg" alt=""/> 
+	<div class="TextonImage">  <h3>Hawaii</h3> </div>
+	</a> </div> </li>
+	
+	<li><div class="ImagesDestinations">
+	<a href="#"> <img src="images/lake-moraine-2700397_1280.jpg" alt=""/> 
+	<div class="TextonImage">  <h3>Lac Moraine </h3> </div>
+	</a> </div> </li>
+	
+	<li><div class="ImagesDestinations">
+	<a href="#"> <img src="images/montreal-3399001_1280.jpg" alt=""/> 
+	<div class="TextonImage">  <h3>Montréal </h3> </div>
+	</a> </div> </li>
+	
+	<li><div class="ImagesDestinations">
+	<a href="#"> <img src="images/cancun-1228131_1280.jpg" alt=""/> 
+	<div class="TextonImage">  <h3>Cancun </h3> </div>
+	</a> </div> </li>
+		</ul>
+	</div>
+	
+		
+	<h2>Amérique du Sud</h2>
+		
+	<div class="ConteneurImagesDestinations"> 
+		<ul> 
+		
+	<li><div class="ImagesDestinations">
+	<a href="#"> <img src="images/argentina-2579058_1280.jpg" alt=""/> 
+	<div class="TextonImage">  <h3>Argentine </h3> </div>
+	</a> </div> </li>
+	
+	<li><div class="ImagesDestinations">
+	<a href="#"> <img src="images/rio-de-janeiro-1963744_1280.jpg" alt=""/> 
+	<div class="TextonImage">  <h3>Rio de Janeiro</h3> </div>
+	</a> </div> </li>
+	
+	<li><div class="ImagesDestinations">
+	<a href="#"> <img src="images/machu-picchu-1569324_1280.jpg" alt=""/> 
+	<div class="TextonImage">  <h3>Machu Picchu</h3> </div>
+	</a> </div> </li>
+	
+	<li><div class="ImagesDestinations">
+	<a href="#"> <img src="images/salar-3351013_1280.jpg" alt=""/> 
+	<div class="TextonImage">  <h3>Bolivie </h3> </div>
+	</a> </div> </li>
+	
+	<li><div class="ImagesDestinations">
+	<a href="#"> <img src="images/venezuela-100292_1280.jpg" alt=""/> 
+	<div class="TextonImage">  <h3>Venezuela </h3> </div>
+	</a> </div> </li>
+			</ul>
+		</div> 
+	
+
+	
+	<h2>Afrique</h2>
+		
+	<div class="ConteneurImagesDestinations"> 
+		<ul> 
+		
+		<li><div class="ImagesDestinations">
+	<a href="#"> <img src="images/morocco-2349647_1280.jpg" alt=""/> 
+	<div class="TextonImage">  <h3>Maroc </h3> </div>
+	</a> </div> </li>
+			
+			<li><div class="ImagesDestinations">
+	<a href="#"> <img src="images/maurice-829715_1280.jpg" alt=""/> 
+	<div class="TextonImage">  <h3>Ile Maurice</h3> </div>
+	</a> </div> </li>
+			
+	<li><div class="ImagesDestinations">
+	<a href="#"> <img src="images/pyramids-3753769_1280.jpg" alt=""/> 
+	<div class="TextonImage">  <h3>Egypte </h3> </div>
+	</a> </div> </li>
+			
+	<li><div class="ImagesDestinations">
+	<a href="#"> <img src="images/mozanbique-2637285_1280.jpg" alt=""/> 
+	<div class="TextonImage">  <h3>Mozambique</h3> </div>
+	</a> </div> </li>
+			
+		<li><div class="ImagesDestinations">
+	<a href="#"> <img src="images/south-africa-1982418_1280.jpg" alt=""/> 
+	<div class="TextonImage">  <h3>Afrique du sud</h3> </div>
+	</a> </div> </li>
+			
+			<li><div class="ImagesDestinations">
+	<a href="#"> <img src="images/kenya-1484781_1280.jpg" alt=""/> 
+	<div class="TextonImage">  <h3>Kenya</h3> </div>
+	</a> </div> </li>
+		
+					<li><div class="ImagesDestinations">
+	<a href="#"> <img src="images/zambie-2729413_1280.jpg" alt=""/> 
+	<div class="TextonImage">  <h3>Zambie</h3> </div>
+	</a> </div> </li>
+			
+		</ul>
+		</div> 
+		
+	<h2>Asie</h2>
+	
+	<div class="ConteneurImagesDestinations"> 
+		<ul> 
+
+		<li><div class="ImagesDestinations">
+	<a href="#"> <img src="images/bangkok-1020850_1280.jpg" alt=""/> 
+	<div class="TextonImage">  <h3>Bangkok</h3> </div>
+	</a> </div> </li>
+			
+			
+			<li><div class="ImagesDestinations">
+	<a href="#"> <img src="images/dubai-1120373_1280.jpg" alt=""/> 
+	<div class="TextonImage">  <h3>Dubai</h3> </div>
+	</a> </div> </li>
+			
+			<li><div class="ImagesDestinations">
+	<a href="#"> <img src="images/hong-kong-1209806_1280.jpg" alt=""/> 
+	<div class="TextonImage">  <h3>Hong Kong</h3> </div>
+	</a> </div> </li>
+			
+				<li><div class="ImagesDestinations">
+	<a href="#"> <img src="images/delhi-282933_1280.jpg" alt=""/> 
+	<div class="TextonImage">  <h3>Inde</h3> </div>
+	</a> </div> </li>
+			
+			<li><div class="ImagesDestinations">
+	<a href="#"> <img src="images/maldives-666122_1280.jpg" alt=""/> 
+	<div class="TextonImage">  <h3>Maldives</h3> </div>
+	</a> </div> </li>
+			
+			<li><div class="ImagesDestinations">
+	<a href="#"> <img src="images/seoul-2162772_1280.jpg" alt=""/> 
+	<div class="TextonImage">  <h3>Séoul</h3> </div>
+	</a> </div> </li>
+			
+			<li><div class="ImagesDestinations">
+	<a href="#"> <img src="images/tokyo-2138168_1280.jpg" alt=""/> 
+	<div class="TextonImage">  <h3>Tokyo</h3> </div>
+	</a> </div> </li>
+			
+		</ul>
+		</div> 
+	
+	
+<footer>
+  <div class="navfooter">
+ <nav>
+  <ul> 
+<li> <a href="#">Contact</a> </li> 
+   <li> <a href="#">Notre entreprise</a> </li> 
+   <li> <a href="#">Aide</a> </li> 
+   <li> <a href="#">Conditions générales d'utilisation</a> </li> 
+   <li> <a href="#">Mentions légales</a> </li>
+   </ul>
+</nav>
+</div>
+	
+</footer>
+  
+	
+</body>
+</html>
